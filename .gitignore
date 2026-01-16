@@ -1,0 +1,43 @@
+# Environment variables
+.env
+
+# Account configuration (contains personal IBANs and names)
+.account-config.json
+
+# Transaction data (sensitive financial information)
+transactions_*.json
+analysis_*.json
+requisition.json
+category-analysis.json
+smart-categories.json
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Internal development documentation (not for public repo)
+HARDCODED_PII_FIX_SUMMARY.md
+OPEN_SOURCE_READINESS_REPORT.md
+PRE_RELEASE_CHECKLIST.md
+README_CREATED.md
+SECURITY_AUDIT_REPORT.md
+SECURITY_FIX_SUMMARY.md
+SECURITY_FIXES_COMPLETE.md
+CODE_IMPROVEMENTS.md
+CRITICAL_PRIVACY_FIXES.md
+ERROR_HANDLING_FIX.md
+UPDATE_SUMMARY.md
+USAGE_GUIDE.md
+CLAUDE_CODE_IMPROVEMENTS.md
+
+# Claude Code project files (but keep skill)
+.claude/
+!.claude/skills/
+!.claude/skills/*.skill

@@ -1,0 +1,24 @@
+{
+  "name": "ego",
+  "version": "1.0.0",
+  "description": "GoCardless Finance Integration",
+  "main": "index.js",
+  "scripts": {
+    "test-credentials": "node test-credentials.js",
+    "connect-bank": "node connect-bank.js",
+    "check-requisition": "node check-requisition.js",
+    "fetch-transactions": "node fetch-transactions.js",
+    "fetch-historical": "node fetch-historical.js",
+    "fetch-weekly": "node fetch-weekly.js",
+    "configure-accounts": "node configure-accounts-ai.js",
+    "setup-accounts": "node setup-account-config.js",
+    "build-categories": "node build-smart-categories.js",
+    "analyze": "node analyze-spending.js",
+    "report": "python3 .claude/skills/gocardless-finance/scripts/report_generator.py"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
